@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DMSans-VariableFont.ttf');
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* COLOR VARIABLES */
+    --black: #09090B;
+    --white: #FFFFFF;
+    --blue: #1D4ED8;
+    --blue-ligth: #3B82F6;
+    --blue-dark: #143BB9;
+    --gray-dark: #0D0D0F;
+    --gray: #C4C4CC;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+
+}
