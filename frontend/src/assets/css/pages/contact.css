@@ -1,0 +1,16 @@
+#section-contact {
+    display: flex;
+    gap: 3rem;
+
+    & > div {
+        width: 50%;
+    }
+
+    & .icon-button {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    
+    }
+}
+

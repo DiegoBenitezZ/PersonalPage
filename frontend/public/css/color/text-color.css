@@ -1,0 +1,11 @@
+.text-blue-ligth {
+    color: var(--blue-ligth);
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.text-gray {
+    color: var(--gray);
+}

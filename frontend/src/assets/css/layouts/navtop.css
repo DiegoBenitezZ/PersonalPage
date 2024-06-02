@@ -1,0 +1,57 @@
+#container-navtop {
+    --nav-height: 30px;
+    max-height: var(--nav-height);
+    height: var(--nav-height);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    & span {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    & .navtop-logo {
+        height: 140%;
+        width: auto;
+    }
+
+    & .icons-group::before {
+        content: '|';
+    }
+}
+
+@media (400px <= width <= 640px) {
+    #container-navtop {
+        --nav-height: 15px;
+
+        & span {
+            gap: 5px;
+        }
+    }
+}
+
+@media (640px <= width <= 768px) {
+    #container-navtop {
+        --nav-height: 20px;
+
+        & span {
+            gap: 8px;
+        }
+    }
+ }
+
+
+ @media (768px <= width <= 1024px) {
+    #container-navtop {
+        --nav-height: 25px;
+
+        & span {
+            gap: 8px;
+        }
+    }
+ }

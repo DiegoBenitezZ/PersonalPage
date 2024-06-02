@@ -1,0 +1,26 @@
+.typing {
+    width: fit-content;
+    height: fit-content;
+    text-wrap: nowrap;
+    overflow-x: hidden;
+    padding-right: 1rem;
+
+    
+}
+
+.typing:after {
+    padding-left: 5px;
+    content: '|';
+    animation: flashing-cursor .75s step-end infinite;
+}
+
+
+@keyframes flashing-cursor {
+    0% {
+        content: '';
+    }
+
+    50% {
+        content: '|';
+    }
+}

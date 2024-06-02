@@ -1,3 +1,12 @@
+@import url("./buttons/button.css");
+@import url("./buttons/link.css");
+@import url("./color/text-color.css");
+@import url("./color/background-color.css");
+@import url("./inputs/input.css");
+@import url("./inputs/textarea.css");
+@import url("./texts/font-size.css");
+@import url("./texts/text-gradient.css");
+
 @font-face {
     font-family: 'DM Sans';
     src: url('../fonts/DMSans-VariableFont.ttf');
@@ -8,6 +17,10 @@
     padding: 0;
     box-sizing: border-box;
 
+    
+}
+
+:root {
     /* COLOR VARIABLES */
     --black: #09090B;
     --white: #FFFFFF;
@@ -22,5 +35,5 @@ body {
     background-color: var(--black);
     color: var(--white);
     font-family: 'DM Sans', sans-serif;
-
+    overflow-x: hidden;
 }

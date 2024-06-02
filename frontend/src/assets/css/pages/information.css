@@ -1,0 +1,41 @@
+#section-information {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-auto-rows: minmax(100px, auto);
+    column-gap: 2.5rem;
+    row-gap: 3rem;
+    
+    & > .profile-information {
+        grid-column: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+
+        & > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+        }
+    }
+
+    & > .header-information, & > .subheader-information, & > .body-information {
+        grid-column: 2;
+    }
+
+    & > .header-information {
+        grid-row: 1;
+    }
+
+    & > .body-information  {
+        grid-row: 2;
+        display: flex;
+        gap: 2rem;
+
+        & .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: start;
+        }
+    }
+}

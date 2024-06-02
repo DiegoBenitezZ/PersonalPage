@@ -1,0 +1,35 @@
+.card {
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 15px;
+}
+
+.card.card-dark {
+    background-color: var(--gray-dark);
+}
+
+.card.card-auto {
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+}
+
+.card.card-sm {
+    
+}
+
+.card.card-md {
+    width: 300px;
+    height: 300px;
+    padding: 2rem;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.card.card-lg {
+    padding: 2rem;
+    font-size: 25px;
+    text-align: justify;
+}
+
+

@@ -1,0 +1,25 @@
+.btn {
+    display: none;
+    border: 3px white solid;
+    border-radius: 100px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.16);
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.btn.btn-sm {
+    display: block;
+}
+
+.btn.btn-md {
+    display: block;
+    font-size: 16px;
+    padding: 09px 30px;
+}
+
+.btn.btn-lg {
+    display: block;
+    font-size: 22px;
+    padding: 8px 40px;
+}

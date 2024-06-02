@@ -1,0 +1,11 @@
+.icon-button {
+    max-height: 50px;
+    height: 100%;
+    color: var(--white);
+    text-decoration: none;
+    
+    & > img {
+        height: 100%;
+        width: auto;
+    }
+}

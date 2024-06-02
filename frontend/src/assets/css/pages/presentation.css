@@ -1,0 +1,102 @@
+#presentation {
+    --presentation-heigth: 640px;
+    min-height: var(--presentation-heigth);
+    display: flex;
+    flex-direction: column;
+
+    & > .presentation-bg {
+        z-index: 0;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        object-position: center;
+        height: var(--presentation-heigth);
+        filter: brightness(0.3);
+    }
+
+    & #presentation-content {
+        z-index: 1;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    & .greeting {
+        margin: 50px 0;
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        .my-name {
+            align-self: flex-end;
+        }
+    }
+
+    & .presentation-description {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        
+        & > span {
+            max-width: 675px;
+        }
+    }
+}
+
+@media (400px <= width <= 640px) {
+    #presentation {
+        --presentation-heigth: 300px;
+
+        & .greeting { 
+            margin: 30px 0;
+        }
+
+        & .presentation-description {
+            gap: 10px;
+
+            & > span { 
+                max-width: 250px;
+            }
+        }
+
+    }
+}
+
+@media (640px <= width <= 768px) {
+    #presentation {
+        --presentation-heigth: 400px;
+
+        & .greeting { 
+            margin: 35px 0;
+        }
+
+        & .presentation-description {
+            gap: 10px;
+
+            & > span { 
+                max-width: 350px;
+            }
+        }
+
+    }
+}
+
+@media (768px <= width <= 1024px) {
+    #presentation {
+        --presentation-heigth: 500px;
+
+        & .greeting { 
+            margin: 35px 0;
+        }
+
+        & .presentation-description {
+            gap: 15px;
+
+            & > span { 
+                max-width: 450px;
+            }
+        }
+
+    }
+}
