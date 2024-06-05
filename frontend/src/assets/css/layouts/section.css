@@ -5,6 +5,18 @@
     margin: auto;
 }
 
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.section-body {
+    width: 100%;
+    height: fit-content;
+}
+
 @media (400px <= width <= 640px) {
     .container-section {
         padding: 20px;

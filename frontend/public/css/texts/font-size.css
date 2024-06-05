@@ -28,7 +28,12 @@
 
 .header-xs {
     font-size: 50px;
-    line-height: 70px;
+    line-height: 50px;
+}
+
+.header-2xs {
+    font-size: 50px;
+    line-height: 50px;
 }
 
 .text-xl {

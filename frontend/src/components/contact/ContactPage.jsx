@@ -16,10 +16,10 @@ const Contact = () => {
                 <br/>
                 <br/>
                 {
-                    socialMedia.map((media, index) => {
+                    socialMedia.map((media) => {
                         return (
                             <>
-                                <IconButton key={index} targetUrl={media.targetUrl} className="text-md" imageName={media.filename} text={media.user} /><br/>
+                                <IconButton key={media.id} targetUrl={media.targetUrl} className="text-md" imageName={media.filename} text={media.user} /><br/>
                             </>
                         );
                     })

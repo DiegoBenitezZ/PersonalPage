@@ -1,0 +1,29 @@
+#section-work-experience {
+    --container-carrusel-heigth: 420px;
+    --container-carrusel-padding: 45px;
+    --card-carrusel-width: 700px;
+    --swipe-left-width: calc(var(--card-carrusel-width) + var(--container-carrusel-padding));
+    --swipe-right-width: calc(-1 * (var(--card-carrusel-width) + var(--container-carrusel-padding)));
+    --animation-time: 4s;
+}
+
+#container-carrusel-work-experience {
+    height: var(--container-carrusel-heigth);
+    width: 100%;
+    max-height: var(--container-carrusel-heigth);
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: var(--container-carrusel-padding);
+    overflow-x: hidden;
+    scroll-snap-align: center;
+}
+
+.card-work-experience {
+    height: 100%;
+    width: var(--card-carrusel-width);
+    min-width: var(--card-carrusel-width);
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 1fr;
+    grid-template-columns: 0.6fr 0.4fr; 
+}
