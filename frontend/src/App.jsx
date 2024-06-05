@@ -1,4 +1,5 @@
 import ContactPage from "./components/contact/ContactPage.jsx";
+import EducationPage from "./components/education/EducationPage.jsx";
 import InformationPage from "./components/information/InformationPage.jsx";
 import PresentationPage from "./components/Presentation.jsx"
 import TecnologyPage from "./components/tecnology/TecnologyPage.jsx";
@@ -11,6 +12,7 @@ const App = () => {
             <TecnologyPage/>
             <InformationPage/>
             <WorkExperiencePage/>
+            <EducationPage/>
             <ContactPage/>
         </>
     );

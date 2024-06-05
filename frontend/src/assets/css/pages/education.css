@@ -1,0 +1,27 @@
+#section-education {
+    --container-list-height: 400px;
+    --item-height: fit-content;
+    --padding-container-list: 20px;
+    --padding-container-item: 30px;
+}
+
+#container-education-list {
+    width: 100%;
+    height: var(--container-list-height);
+    max-height: var(--container-list-height);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px var(--padding-container-list) 0px 0px;
+    border-radius: 15px;
+    overflow-y:scroll;
+}
+
+.empty {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+  
