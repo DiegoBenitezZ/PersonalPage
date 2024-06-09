@@ -13,7 +13,6 @@
     flex-direction: column;
     gap: 15px;
     padding: 0px var(--padding-container-list) 0px 0px;
-    border-radius: 15px;
     overflow-y:scroll;
 }
 
@@ -24,4 +23,59 @@
     justify-content: center;
     border-radius: 15px;
 }
-  
+
+
+@media (width < 640px) {
+    #section-education {
+        --container-list-height: 250px;
+        --item-radius: 5px;
+        --padding-container-list: 10px;
+        --padding-container-item: 15px;
+    }
+}
+
+@media (640px <= width < 768px) {
+    #section-education {
+        --container-list-height: 280px;
+        --item-radius: 8px;
+        --padding-container-list: 10px;
+        --padding-container-item: 15px;
+    }
+}
+
+@media (768px <= width < 1024px) {
+    #section-education {
+        --container-list-height: 300px;
+        --item-radius: 10px;
+        --padding-container-list: 10px;
+        --padding-container-item: 20px;
+    }
+}
+
+@media (1024px <= width < 1280px) {
+    #section-education {
+        --container-list-height: 350px;
+        --item-radius: 10px;
+        --padding-container-list: 15px;
+        --padding-container-item: 25px;
+    }
+}
+
+@media (1280px <= width < 1450px) {
+    #section-education {
+        --container-list-height: 380px;
+        --item-radius: 15px;
+        --padding-container-list: 15px;
+        --padding-container-item: 28px;
+    }
+}
+
+@media (1450px <= width) {
+    #section-education {
+        --container-list-height: 400px;
+        --item-radius: 15px;
+        --padding-container-list: 20px;
+        --padding-container-item: 30px;
+        --section-padding-x: 70px;
+    }
+}

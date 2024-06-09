@@ -1,7 +1,7 @@
 .container-section {
     max-width: 1600px;
-    min-width: 400px;
-    padding: 50px 80px;
+    min-width: 400px !important;
+    padding: var(--section-padding-y) var(--section-padding-x);
     margin: auto;
 }
 
@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: var(--section-header-margin-bottom);
 }
 
 .section-body {
@@ -19,18 +19,57 @@
 
 @media (400px <= width <= 640px) {
     .container-section {
-        padding: 20px;
+        --section-padding-x: 20px;
+        --section-padding-y: 20px;
+        --section-header-margin-bottom: 20px;
     }
 }
 
 @media (640px <= width <= 768px) {
     .container-section {
-        padding: 30px 40px;
+        --section-padding-x: 30px;
+        --section-padding-y: 30px;
+        --section-header-margin-bottom: 25px;
     }
 }
 
 @media (768px <= width <= 1024px) {
     .container-section {
-        padding: 40px 50px;
+        --section-padding-x: 50px;
+        --section-padding-y: 50px;
+        --section-header-margin-bottom: 30px;
+    }
+}
+
+@media (1024px <= width <= 1280px) {
+    .container-section {
+        --section-padding-x: 30px;
+        --section-padding-y: 50px;
+        --section-header-margin-bottom: 35px;
+    }
+}
+
+@media (1280px <= width <= 1450px) {
+    .container-section {
+        --section-padding-x: 90px;
+        --section-padding-y: 50px;
+        --section-header-margin-bottom: 40px;
+    }
+}
+
+@media (1450px <= width) {
+    .container-section {
+        --section-padding-x: 100px;
+        --section-padding-y: 50px;
+        --section-header-margin-bottom: 40px;
+    }
+}
+
+
+@media (1700px <= width) {
+    .container-section {
+        --section-padding-x: 50px;
+        --section-padding-y: 50px;
+        --section-header-margin-bottom: 40px;
     }
 }

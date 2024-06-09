@@ -1,12 +1,13 @@
 #presentation {
-    --presentation-heigth: 640px;
-    min-height: var(--presentation-heigth);
+    height: var(--presentation-heigth);
+    max-height: 900px !important;
     display: flex;
     flex-direction: column;
 
     & > .presentation-bg {
         z-index: 0;
         width: 100%;
+        max-height: 900px !important;
         position: absolute;
         top: 0;
         left: 0;
@@ -23,7 +24,6 @@
     }
 
     & .greeting {
-        margin: 50px 0;
         display: inline-flex;
         flex-wrap: wrap;
         gap: 15px;
@@ -37,14 +37,10 @@
         width: 100%;
         display: inline-flex;
         justify-content: space-between;
-        
-        & > span {
-            max-width: 675px;
-        }
     }
 }
 
-@media (400px <= width <= 640px) {
+@media (400px <= width < 640px) {
     #presentation {
         --presentation-heigth: 300px;
 
@@ -63,9 +59,9 @@
     }
 }
 
-@media (640px <= width <= 768px) {
+@media (640px <= width < 768px) {
     #presentation {
-        --presentation-heigth: 400px;
+        --presentation-heigth: 350px;
 
         & .greeting { 
             margin: 35px 0;
@@ -82,9 +78,9 @@
     }
 }
 
-@media (768px <= width <= 1024px) {
+@media (768px <= width < 1024px) {
     #presentation {
-        --presentation-heigth: 500px;
+        --presentation-heigth: 400px;
 
         & .greeting { 
             margin: 35px 0;
@@ -95,6 +91,63 @@
 
             & > span { 
                 max-width: 450px;
+            }
+        }
+
+    }
+}
+
+@media (1024px <= width < 1280px) {
+    #presentation {
+        --presentation-heigth: 100vh;
+
+        & .greeting { 
+            margin: 35px 0;
+        }
+
+        & .presentation-description {
+            gap: 15px;
+
+            & > span { 
+                max-width: 450px;
+            }
+        }
+
+    }
+}
+
+@media (1280px <= width < 1450px){
+    #presentation {
+        --presentation-heigth: 100vh;
+
+        & .greeting { 
+            margin: 50px 0;
+        }
+
+        & .presentation-description {
+            gap: 15px;
+
+            & > span { 
+                max-width: 600px;
+            }
+        }
+
+    }
+}
+
+@media (1450px <= width){
+    #presentation {
+        --presentation-heigth: 100vh;
+
+        & .greeting { 
+            margin: 60px 0;
+        }
+
+        & .presentation-description {
+            gap: 15px;
+
+            & > span { 
+                max-width: 650px;
             }
         }
 

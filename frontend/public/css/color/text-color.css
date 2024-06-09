@@ -2,6 +2,11 @@
     color: var(--blue-ligth);
 }
 
+.text-blue-dark {
+    color: var(--blue-dark);
+}
+
+
 .text-blue {
     color: var(--blue);
 }

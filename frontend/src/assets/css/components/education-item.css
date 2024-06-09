@@ -6,7 +6,7 @@
     column-gap: 1px;
     row-gap: 1px;
     padding: calc(var(--padding-container-item) - 10px) var(--padding-container-item);
-    border-radius: 15px;
+    border-radius: var(--item-radius);
     color: var(--white);
     text-decoration: none;
     cursor: pointer;
@@ -22,8 +22,6 @@
         color: white !important;
     }
 }
-
-
 
 .education-name {
     grid-row: 1;

@@ -1,0 +1,101 @@
+#section-information .body-information { 
+    display: flex;
+    flex-direction: column;
+
+    & .information-card {
+        display: flex;
+        align-items: center;
+        padding: var(--card-information-skills-padding);
+        gap: var(--card-information-skills-gap);
+        border-radius: var(--card-information-radius);
+    }
+}
+
+@media (400px <= width < 640px) {
+    #section-information .body-information { 
+        --card-information-skills-padding: 20px;
+        --card-information-skills-gap: 15px;
+        --card-information-radius: 5px;
+    }
+}
+
+@media (640px <= width < 768px) {
+    #section-information .body-information { 
+        --card-information-skills-padding: 25px;
+        --card-information-skills-gap: 20px;
+        --card-information-radius: 10px;
+    }
+}
+
+@media (748px <= width < 1024px) {
+    #section-information .body-information { 
+        --card-information-skills-padding: 25px;
+        --card-information-skills-gap: 25px;
+        --card-information-radius: 15px;
+    }
+}
+
+@media (1024px <= width < 1280px) {
+    #section-information .body-information {         
+        --card-information-skills-padding: 25px;
+        --card-information-skills-gap: 25px;
+        --card-information-radius: 15px;
+        --card-information-size: 300px;
+
+        flex-direction: row;
+        align-items: end;
+        gap: var(--card-information-radius);
+
+        & .information-card { 
+            width: 300px;
+            height: 300px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+    }
+}
+
+
+
+@media (1280px <= width < 1450px) {
+    #section-information .body-information {         
+        --card-information-skills-padding: 30px;
+        --card-information-skills-gap: 30px;
+        --card-information-radius: 15px;
+        --card-information-size: 320px;
+
+        flex-direction: row;
+        align-items: end;
+        gap: var(--card-information-radius);
+
+        & .information-card { 
+            width: var(--card-information-size);
+            height: var(--card-information-size);
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+    }
+}
+
+@media (1445px <= width) {
+    #section-information .body-information {         
+        --card-information-skills-padding: 35px;
+        --card-information-skills-gap: 30px;
+        --card-information-radius: 15px;
+        --card-information-size: 350px;
+
+        flex-direction: row;
+        align-items: end;
+        gap: var(--card-information-radius);
+
+        & .information-card { 
+            width: var(--card-information-size);
+            height: var(--card-information-size);
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+    }
+}

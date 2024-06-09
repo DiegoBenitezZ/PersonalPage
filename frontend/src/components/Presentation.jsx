@@ -18,10 +18,10 @@ const Presentation = () => {
                 </div>
                 <p className="presentation-description">
                     <span className="text-sm">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliquat.
+                    This my portfolio where you can learn more about me and my career,
+                    and also watch my more important projects and all about my education.
                     </span>
-                    <button type="button" className="btn btn-md">Send</button>
+                    <button type="button" className="btn btn-lg"> {"Start"}  </button>
                 </p>
             </div>
         </Section>

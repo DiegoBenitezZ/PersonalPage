@@ -1,3 +1,5 @@
+import "../../assets/css/components/tecnology-item.css"
+
 const TecnologyItem = ({text, fileName}) => {
     return (
         <div className="slide-item">

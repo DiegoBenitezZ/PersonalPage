@@ -16,8 +16,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    
 }
 
 :root {
@@ -32,8 +30,13 @@
 }
 
 body {
-    background-color: var(--black);
-    color: var(--white);
+    min-width: 400px !important;
     font-family: 'DM Sans', sans-serif;
-    overflow-x: hidden;
+    color: var(--white);
+    /* background-color: #000000; */
+    background-color: var(--black);
+}
+
+section {
+    background-color: var(--black);
 }

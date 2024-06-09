@@ -4,8 +4,7 @@
     text-wrap: nowrap;
     overflow-x: hidden;
     padding-right: 1rem;
-
-    
+    overflow-x: hidden;
 }
 
 .typing:after {

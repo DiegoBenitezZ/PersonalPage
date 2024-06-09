@@ -10,3 +10,9 @@
 .bg-dark {
     background-color: var(--gray-dark);
 }
+
+@media (width < 640px) {}
+@media (640px <= width < 768px) {}
+@media (768px <= width < 1024px) {}
+@media (1024px <= width < ) {}
+@media (width) {}

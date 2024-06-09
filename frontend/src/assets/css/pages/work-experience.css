@@ -1,9 +1,10 @@
 #section-work-experience {
     --container-carrusel-heigth: 420px;
+    --container-carrusel-gap: 45px;
     --container-carrusel-padding: 45px;
     --card-carrusel-width: 700px;
-    --swipe-left-width: calc(var(--card-carrusel-width) + var(--container-carrusel-padding));
-    --swipe-right-width: calc(-1 * (var(--card-carrusel-width) + var(--container-carrusel-padding)));
+    --swipe-left-width: calc(var(--card-carrusel-width) + var(--container-carrusel-gap));
+    --swipe-right-width: calc(-1 * (var(--card-carrusel-width) + var(--container-carrusel-gap)));
     --animation-time: 4s;
 }
 
@@ -14,7 +15,7 @@
     max-width: 100%;
     display: flex;
     justify-content: center;
-    gap: var(--container-carrusel-padding);
+    column-gap: var(--container-carrusel-gap);
     overflow-x: hidden;
     scroll-snap-align: center;
 }
@@ -26,4 +27,59 @@
     display: grid;
     grid-template-rows: 0.1fr 0.1fr 1fr;
     grid-template-columns: 0.6fr 0.4fr; 
+    padding: var(--container-carrusel-padding) !important;
+}
+
+@media (width < 640px) {
+    #section-work-experience {
+        --container-carrusel-heigth: 200px;
+        --container-carrusel-gap: 5px;
+        --card-carrusel-width: 300px;
+        --container-carrusel-padding: 15px;
+    }
+}
+
+@media (640px <= width < 768px) {
+    #section-work-experience {
+        --container-carrusel-heigth: 400px;
+        --container-carrusel-gap: 5px;
+        --card-carrusel-width: 500px;
+        --container-carrusel-padding: 35px;
+    }
+}
+
+@media (768px <= width < 1024px) {
+    #section-work-experience {
+        --container-carrusel-heigth: 400px;
+        --container-carrusel-gap: 10px;
+        --card-carrusel-width: 550px;
+        --container-carrusel-padding: 30px;
+    }
+}
+
+@media (1024px <= width < 1280px) {
+    #section-work-experience {
+        --container-carrusel-heigth: 420px;
+        --container-carrusel-gap: 25px;
+        --card-carrusel-width: 650px;
+        --container-carrusel-padding: 45px;
+    }
+}
+
+@media (1280px <= width < 1450px) {
+    #section-work-experience {
+        --container-carrusel-heigth: 420px;
+        --container-carrusel-gap: 35px;
+        --card-carrusel-width: 700px;
+        --container-carrusel-padding: 50px;
+    }
+}
+
+@media (1450px <= width) {
+    #section-work-experience {
+        --container-carrusel-heigth: 450px;
+        --container-carrusel-gap: 40px;
+        --card-carrusel-width: 740px;
+        --container-carrusel-padding: 55px;
+    }
 }

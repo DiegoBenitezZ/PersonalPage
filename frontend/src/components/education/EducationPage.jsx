@@ -5,7 +5,7 @@ import { useState } from "react";
 import "../../assets/css/pages/education.css"
 
 const EducationPage = () => {
-    let [achievementType, setAchievementType] = useState("grade")
+    let [achievementType, setAchievementType] = useState("certification")
     let achievementsList = achievements[achievementType];
 
     const handleChangeType = (type = "grade") => {

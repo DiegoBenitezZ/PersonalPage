@@ -2,6 +2,7 @@
     background-color: var(--blue);
     color: var(--white);
     border-radius: 15px;
+    text-align: justify;
 }
 .card-muted {
     filter: brightness(0.65);
@@ -24,24 +25,27 @@
 }
 
 .card.card-md {
-    width: 300px;
-    height: 300px;
     padding: 2rem;
-    font-size: 25px;
-    text-align: justify;
 }
 
 .card.card-lg {
     padding: 2rem;
     font-size: 25px;
-    text-align: justify;
+ 
 }
 
 .card.card-xl {
     padding: 3rem;
     font-size: 25px;
-    text-align: justify;
 }
 
 
+@media (400px <= width <= 640px) {
+    .card.card-md {
+        
+    }
+}
 
+@media (640px <= width <= 768px) {
+
+}

@@ -3,8 +3,8 @@
     width: var(--card-carrusel-width);
     min-width: var(--card-carrusel-width);
     display: grid;
-    grid-template-rows: 0.1fr 0.1fr 1fr;
-    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
 }
 
 .job-name {
@@ -27,8 +27,37 @@
 
 
 .job-description {
-    padding-left: 1.5rem;
+    padding-left: var(--job-description-padding-left);
     grid-row: 3;
     grid-column-start: 1;
     grid-column-end: 3;
 }
+
+@media (width < 640px) {
+    #section-work-experience {
+        --job-description-padding-left: 10px;
+
+        .job-date-position {
+            display: none;
+        }
+    }
+}
+
+@media (640px <= width < 768px) {
+    #section-work-experience {
+        --job-description-padding-left: 10px;
+
+        .job-date-position {
+            display: none;
+        }
+    }
+}
+
+@media (768px <= width < 1450px) {
+    #section-work-experience {
+        --job-description-padding-left: 20px;
+    }
+}
+
+
+@media (1450px <= width) {}

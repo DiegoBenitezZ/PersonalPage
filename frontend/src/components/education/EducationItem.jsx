@@ -2,7 +2,7 @@ import "../../assets/css/components/education-item.css"
 
 const EducationItem = ({achievement}) => {
     return (
-        <a href={achievement.url} className="education-item bg-black" target="_blank" rel="noopener noreferrer">
+        <a href={achievement} className="education-item bg-black" target="_blank" rel="noopener noreferrer">
             <h4 className="education-name text-sm text-bold">{achievement.name}</h4>
             <span className="education-date text-3xs text-bold">{achievement.date}</span>
             <span className="education-provider text-3xs text-blue">{achievement.provider}</span>
