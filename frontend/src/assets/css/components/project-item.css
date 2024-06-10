@@ -25,3 +25,8 @@
     white-space: nowrap;
     text-overflow: ellipsis
 }
+
+@media (width < 400px) {
+    
+    
+}

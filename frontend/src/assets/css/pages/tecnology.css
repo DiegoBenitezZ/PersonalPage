@@ -15,7 +15,7 @@
     overflow-y: hidden;
 }
 
-@media (width <= 640px) {
+@media (width < 640px) {
     #section-tecnology {
         --slide-track-heigth: 60px;
         --slide-track-padding-y: 15px;
@@ -32,7 +32,7 @@
     }
 }
 
-@media (640px <= width <= 768px) {
+@media (640px <= width < 768px) {
     #section-tecnology {
         --slide-track-heigth: 90px;
         --slide-track-padding-y: 25px;
@@ -49,7 +49,7 @@
     }
 }
 
-@media (768px <= width <= 1024px) {
+@media (768px <= width < 1024px) {
     #section-tecnology {
         --slide-track-heigth: 100px;
         --slide-track-padding-y: 25px;
@@ -66,7 +66,7 @@
     }
 }
 
-@media (1024px <= width <= 1280px) {
+@media (1024px <= width < 1280px) {
     #section-tecnology {
         --slide-track-heigth: 105px;
         --slide-track-padding-y: 25px;
@@ -84,7 +84,7 @@
 }
 
 
-@media (1280px <= width <= 1450px) {
+@media (1280px <= width < 1450px) {
     #section-tecnology {
         --slide-track-heigth: 115px;
         --slide-track-padding-y: 30px;

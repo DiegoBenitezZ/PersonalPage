@@ -11,7 +11,7 @@
     }
 }
 
-@media (400px <= width < 640px) {
+@media (width < 640px) {
     #section-information .body-information { 
         --card-information-skills-padding: 20px;
         --card-information-skills-gap: 15px;

@@ -46,7 +46,7 @@
     }
 }
 
-@media (400px <= width < 640px) {
+@media (width < 640px) {
     #presentation {
         --presentation-heigth: 300px;
 
