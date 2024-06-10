@@ -17,7 +17,7 @@ const achievements = {
             provider: "Bhrugen Patel",
             location: "Udemy",
             date: "March 2024",
-            amountTime: "17 hours",
+            amountTime: "",
             url: "https://drive.google.com/file/d/1qgiFB9Y3Eni9tLL_arTah32LC-opE9AC/view?usp=drive_link"
         },
         {
@@ -26,7 +26,7 @@ const achievements = {
             provider: "Bhrugen Patel",
             location: "Udemy",
             date: "Apr 2024",
-            amountTime: "9 hours",
+            amountTime: "",
             url: "https://drive.google.com/file/d/1wtx79Qdbik0xafSGyqLwjztrNG9vJ4k6/view?usp=drive_link"
         },
         {
@@ -35,7 +35,7 @@ const achievements = {
             provider: "Bhrugen Patel",
             location: "Udemy",
             date: "Apr 2024",
-            amountTime: "4.5 hours",
+            amountTime: "",
             url: "https://drive.google.com/file/d/1HFnpp-n1bGlJUEE2U3dwoopZvZ6X9luj/view?usp=drive_link"
         },
         {
