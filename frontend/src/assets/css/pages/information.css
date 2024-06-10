@@ -8,6 +8,10 @@
     }
 }
 
+#section-information > div {
+    animation: pop-up 600ms 1 ease forwards;
+}
+
 @media (width <= 640px) {
     #section-information {
         --information-row-gap: 15px;

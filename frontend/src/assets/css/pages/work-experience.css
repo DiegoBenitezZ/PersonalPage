@@ -41,10 +41,10 @@
 
 @media (640px <= width < 768px) {
     #section-work-experience {
-        --container-carrusel-heigth: 400px;
+        --container-carrusel-heigth: 280px;
         --container-carrusel-gap: 5px;
-        --card-carrusel-width: 500px;
-        --container-carrusel-padding: 35px;
+        --card-carrusel-width: 400px;
+        --container-carrusel-padding: 25px;
     }
 }
 

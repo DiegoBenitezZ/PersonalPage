@@ -5,6 +5,7 @@
     overflow-x: hidden;
     padding-right: 1rem;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .typing:after {

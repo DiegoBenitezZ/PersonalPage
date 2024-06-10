@@ -17,3 +17,64 @@
     font-weight: 700px;
     padding: 0.5rem 1rem;
 }
+
+@media (width < 640px) {
+    .textarea-md {
+        border-width: 2px;
+        border-radius: 5px;
+        height: 45px;
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+}
+
+@media (640px <= width < 768px) {
+    .textarea-md {
+        border-width: 2px;
+        border-radius: 5px;
+        height: 45px;
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+
+@media (768px <= width < 1024px) {
+    .textarea-md {
+        border-width: 2px;
+        border-radius: 5px;
+        height: 55px;
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+@media (1024px <= width < 1280px) {
+    .textarea-md {
+        border-width: 2px;
+        border-radius: 5px;
+        height: 55px;
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+@media (1280px <= width < 1450px) {
+    .textarea-md {
+        border-width: 2px;
+        border-radius: 5px;
+        height: 75px;
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
+
+@media (1450px <= width) {
+    .textarea-md {
+        border-width: 2px;
+        border-radius: 5px;
+        height: 90px;
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+}

@@ -1,7 +1,7 @@
 import Section from "../../layouts/Section"
 import ProjectsList from "./ProjectsList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { projects } from "../../assets/data/projects";
 import "../../assets/css/pages/projects.css"
 
@@ -9,11 +9,21 @@ const ProjectsPage = () => {
     const [indexPosition, setIndexPosition] = useState(0);
     const [showMore, setShowMore] = useState (false);
     let projectList = (showMore) ? projects : projects.slice(indexPosition, indexPosition + 4); 
+    let timeout = 400;
+
+    useEffect(() => {
+        return () => {
+            let elements = document.getElementsByClassName("project-item");
+
+            Array.prototype.slice.call(elements).map((el) => {
+                el.classList.add("pop-up");
+            })
+        }
+    }, [indexPosition]);
 
     const handleShowMore = () => {
         setShowMore((prevState) => !prevState);
-
-        setIndexPosition((prevState) => 0);
+        setIndexPosition(() => 0);
     }
 
     const nextPage = () => {

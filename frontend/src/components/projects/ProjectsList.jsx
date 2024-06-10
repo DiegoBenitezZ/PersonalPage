@@ -6,7 +6,7 @@ const ProjectsList = ({projects}) => {
             {
                 projects.map(project => 
                     <ProjectsItem 
-                        key={project}
+                        key={project.id}
                         project={project}
                     /> 
                 )

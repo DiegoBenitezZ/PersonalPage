@@ -7,6 +7,25 @@
     grid-template-columns: auto auto;
 }
 
+.card-work-experience:not(.card-muted) {
+    animation: pop-up 400ms ease forwards;
+}
+
+.card-work-experience.card-muted {
+    transform: scale(0);
+    animation: pop-up-muted 400ms 200ms ease forwards;
+}
+
+
+.card-work-experience:not(.card-muted).pop-up {
+    animation: pop-up-muted 400ms ease forwards;
+}
+
+.card-work-experience.card-muted.pop-up {
+    transform: scale(0);
+    animation: pop-up 400ms 200ms ease forwards;
+}
+
 .job-name {
     grid-row: 1;
     grid-column: 1;

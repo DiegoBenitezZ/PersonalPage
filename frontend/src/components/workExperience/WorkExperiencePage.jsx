@@ -13,6 +13,16 @@ const WorkExperiencePage = () => {
         }
     });
 
+    useEffect(() => {
+        return () => {
+            let elements = document.getElementsByClassName("card-work-experience");
+
+            Array.prototype.slice.call(elements).map((el) => {
+                el.classList.add("pop-up");
+            })
+        }
+    }, [position]);
+
     const nextCard = () => {
         if(jobs[position.index + 1] != undefined) {
             setPosition((prevState) => {

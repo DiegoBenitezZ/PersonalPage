@@ -6,7 +6,7 @@ const EducationList = ({achievements}) => {
             {
                 (achievements.length > 0) ?
                     achievements.map((achievement) => 
-                        <EducationItem achievement={achievement}/>
+                        <EducationItem key={achievement.id} achievement={achievement}/>
                     )
                 :
                 <span className="empty text-xs">No items available</span>

@@ -13,7 +13,15 @@
     -webkit-user-select: none; 
     -ms-user-select: none;
     user-select: none; 
+
+    animation: swipe-right 600ms ease forwards;
+
+    &:nth-child(2n) {
+        animation: swipe-left 600ms ease forwards;
+    }
 }
+
+
 
 .education-item:hover {
     background: linear-gradient(270deg, rgba(59,7,100,1) 0%, rgba(126,34,206,1) 35%, rgba(30,64,175,1) 100%);
@@ -50,3 +58,4 @@
     grid-column: 2;
     text-align: end;
 }
+

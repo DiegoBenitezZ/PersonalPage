@@ -1,6 +1,8 @@
 import Card from "../../layouts/Card";
 import InputText from "../inputs/InputText";
 import Textarea from "../inputs/Textarea"
+import IconButton from "../buttons/IconButton"
+import { socialMedia } from "../../assets/data/socialMedia"
 import { useState } from "react";
 import "../../assets/css/components/contact-form.css"
 
@@ -15,11 +17,26 @@ const ContactForm = () => {
     })
 
     const handleSubmitForm = (e) => {
-        event.preventDefault()
+        e.preventDefault()
     }
 
     return(
-        <Card className="card-lg">
+        <div className="container-contact-form ">
+            <h4 className="contact-form-title text-md">
+                Do you want know <br/>
+                some more about me ?
+            </h4>
+           <div className="icon-group">
+            {
+                    socialMedia.map((media) => {
+                        return (
+                            <>
+                                <IconButton key={media.id} targetUrl={media.targetUrl} className="text-md" imageName={media.filename}/><br/>
+                            </>
+                        );
+                    })
+                }
+           </div>
             <form id="contact-form" className="">
                 <InputText 
                     className="input-text-md" 
@@ -46,10 +63,10 @@ const ContactForm = () => {
                     })}
                 />
                 <div>
-                    <button type="submit" className="btn btn-lg">Send</button>
+                    <button type="submit" className="btn btn-md">Send</button>
                 </div>
             </form>
-        </Card>       
+        </div>       
     )
 }
 

@@ -17,3 +17,58 @@
     font-weight: 700px;
     padding-left: 1rem;
 }
+
+@media (width < 640px) {
+    .input-text-md {
+        border-width: 2px;
+        border-radius: 5px;
+        height: 30px;
+        font-size: 10px;
+        padding-left: 10px;
+    }
+}
+
+@media (640px <= width < 768px) {
+    .input-text-md {
+        border-width: 2px;
+        border-radius: 5px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+@media (768px <= width < 1024px) {
+    .input-text-md {
+        border-width: 2px;
+        border-radius: 5px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+@media (1024px <= width < 1280px) {
+    .input-text-md {
+        border-width: 2px;
+        border-radius: 5px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+@media (1280px <= width < 1450px) {
+    .input-text-md {
+        border-width: 2px;
+        border-radius: 5px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media (1450px <= width) {
+    .input-text-md {
+        border-width: 2px;
+        border-radius: 5px;
+        height: 50px;
+        font-size: 18px;
+    }
+}

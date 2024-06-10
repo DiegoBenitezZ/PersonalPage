@@ -94,13 +94,13 @@
     }
     
     .header-xs {
-        font-size: 25px;
+        font-size: 30px;
         line-height: 25px;
     }
     
     .header-2xs {
-        font-size: 50px;
-        line-height: 50px;
+        font-size: 28px;
+        line-height: 22px;
     }
     
     .text-xl {
@@ -117,11 +117,11 @@
     }
     
     .text-sm {
-        font-size: 18px;
+        font-size: 14px;
     }
     
     .text-xs {
-        font-size: 16px;
+        font-size: 12px;
     }
     
     .text-2xs {
@@ -159,13 +159,13 @@
     }
     
     .header-xs {
-        font-size: 28px;
-        line-height: 28px;
+        font-size: 38px;
+        line-height: 38px;
     }
     
     .header-2xs {
-        font-size: 50px;
-        line-height: 50px;
+        font-size: 35px;
+        line-height: 35px;
     }
     
     .text-xl {
@@ -182,23 +182,23 @@
     }
     
     .text-sm {
-        font-size: 20px;
+        font-size: 16px;
     }
     
     .text-xs {
-        font-size: 18px;
-    }
-    
-    .text-2xs {
         font-size: 14px;
     }
     
-    .text-3xs {
+    .text-2xs {
         font-size: 12px;
     }
     
-    .text-4xs {
+    .text-3xs {
         font-size: 10px;
+    }
+    
+    .text-4xs {
+        font-size: 8px;
     }
 }
 
@@ -214,8 +214,8 @@
     }
     
     .header-md {
-        font-size: 2px;
-        line-height: 2px;
+        font-size: 75px;
+        line-height: 75px;
     }
     
     .header-sm {
@@ -224,8 +224,8 @@
     }
     
     .header-xs {
-        font-size: 2px;
-        line-height: 2px;
+        font-size: 55px;
+        line-height: 55px;
     }
     
     .header-2xs {
@@ -247,23 +247,23 @@
     }
     
     .text-sm {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .text-xs {
-        font-size: 18px;
-    }
-    
-    .text-2xs {
-        font-size: 18px;
-    }
-    
-    .text-3xs {
         font-size: 16px;
     }
     
-    .text-4xs {
+    .text-2xs {
         font-size: 14px;
+    }
+    
+    .text-3xs {
+        font-size: 12px;
+    }
+    
+    .text-4xs {
+        font-size: 10px;
     }
 }
 
@@ -279,8 +279,8 @@
     }
     
     .header-md {
-        font-size: 2px;
-        line-height: 2px;
+        font-size: 85px;
+        line-height: 85px;
     }
     
     .header-sm {
@@ -289,8 +289,8 @@
     }
     
     .header-xs {
-        font-size: 50px;
-        line-height: 50px;
+        font-size: 55px;
+        line-height: 55px;
     }
     
     .header-2xs {
@@ -312,23 +312,23 @@
     }
     
     .text-sm {
-        font-size: 22px;
-    }
-    
-    .text-xs {
         font-size: 20px;
     }
     
-    .text-2xs {
+    .text-xs {
         font-size: 18px;
     }
     
-    .text-3xs {
+    .text-2xs {
         font-size: 16px;
     }
     
-    .text-4xs {
+    .text-3xs {
         font-size: 14px;
+    }
+    
+    .text-4xs {
+        font-size: 12px;
     }
 }
 
@@ -344,8 +344,8 @@
     }
     
     .header-md {
-        font-size: 2px;
-        line-height: 2px;
+        font-size: 105px;
+        line-height: 105px;
     }
     
     .header-sm {
@@ -354,18 +354,18 @@
     }
     
     .header-xs {
-        font-size: 50px;
+        font-size: 60px;
         line-height: 50px;
     }
     
     .header-2xs {
-        font-size: 50px;
-        line-height: 50px;
+        font-size: 55px;
+        line-height: 55px;
     }
     
     .text-xl {
-        font-size: 35px;
-        line-height: 30px;
+        font-size: 45px;
+        line-height: 40px;
     }
     
     .text-lg {
@@ -378,11 +378,11 @@
     }
     
     .text-sm {
-        font-size: 25px;
+        font-size: 22px;
     }
     
     .text-xs {
-        font-size: 22px;
+        font-size: 20px;
     }
     
     .text-2xs {

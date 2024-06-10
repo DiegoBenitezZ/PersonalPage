@@ -1,16 +1,104 @@
 #section-contact {
+    height: var(--container-contact-height);
+    max-height: var(--container-contact-height);
     display: flex;
-    gap: 3rem;
+    padding: var(--section-padding-y) 0 0 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     0 0 0;
+}
 
-    & > div {
-        width: 50%;
-    }
-
-    & .icon-button {
-        display: flex;
-        align-items: center;
-        gap: 15px;
+#section-contact .container-contact-form {
+    width: var(--container-contact-form-width);
+    height: 100%;
+    padding: var(--padding-contact-form-y) var(--padding-contact-form-x);
+    animation: fade-in  2s ease forwards;
+}
     
+#section-contact .container-contact-bg {
+    width: calc(100% - var(--container-contact-form-width));
+    background-image: url("../../img/footer-bg.jpg");
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+    & > img {
+        width: 100%;
+        height: auto;
+        object-position: bottom;
+        object-fit: cover;
+        filter: brightness(0.6);
+        animation: zoom-in-out 50s ease infinite forwards;
     }
 }
 
+#section-contact .contact-form-title {
+    text-align: center;
+    margin-bottom: var(--contact-form-title-margin-bottom);
+}
+
+#section-contact .icon-group {
+    display: flex;
+    justify-content: center;  
+    gap: var(--icon-gap-size); 
+}
+
+#section-contact .icon-button img {
+    width: var(--icon-size);
+}
+
+@media (width < 640px) {
+    #section-contact {
+        --container-contact-height: 300px;
+        --padding-contact-form-y: 20px;
+        --padding-contact-form-x: 20px;
+        --icon-size: 15px;
+        --icon-gap-size: 5px;
+        --contact-form-title-margin-bottom: 5px;
+        --container-contact-form-width: 50%;
+    }
+}
+
+@media (640px <= width < 768px) {
+    #section-contact {
+        --container-contact-height: 340px;
+        --padding-contact-form-y: 20px;
+        --padding-contact-form-x: 35px;
+        --icon-size: 17px;
+        --icon-gap-size: 5px;
+        --contact-form-title-margin-bottom: 5px;
+        --container-contact-form-width: 50%;
+    }
+}
+
+@media (768px <= width < 1024px) {
+    #section-contact {
+        --container-contact-height: 400px;
+        --padding-contact-form-y: 20px;
+        --padding-contact-form-x: 30px;
+        --icon-size: 18px;
+        --icon-gap-size: 6px;
+        --contact-form-title-margin-bottom: 5px;
+        --container-contact-form-width: 40%;
+    }
+}
+
+@media (1024px <= width < 1280px) {
+    #section-contact {
+        --container-contact-height: 420px;
+        --padding-contact-form-y: 25px;
+        --padding-contact-form-x: 30px;
+        --icon-size: 22px;
+        --icon-gap-size: 8px;
+        --contact-form-title-margin-bottom: 7px;
+        --container-contact-form-width: 35%;
+    }
+}
+
+@media (1280px <= width ) {
+    #section-contact {
+        --container-contact-height: 500px;
+        --padding-contact-form-y: 25px;
+        --padding-contact-form-x: 45px;
+        --icon-size: 26px;
+        --icon-gap-size: 10px;
+        --contact-form-title-margin-bottom: 7px;
+        --container-contact-form-width: 33%;
+    }
+}

@@ -34,3 +34,22 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
+@media (width < 640px) {
+    .text-blue-shadow {
+        text-shadow: -2px 0 0 var(--blue);
+    }
+}
+
+@media (640px <= width < 768px) {
+    .text-blue-shadow {
+        text-shadow: -3px 0 0 var(--blue);
+    }
+}
+
+@media (768px <= width < 1280px) {
+    .text-blue-shadow {
+        text-shadow: -4px 0 0 var(--blue);
+    }
+}

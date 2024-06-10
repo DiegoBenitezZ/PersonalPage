@@ -1,4 +1,6 @@
 #presentation {
+    --greetings-animation-time: 600ms;
+
     height: var(--presentation-heigth);
     max-height: 900px !important;
     display: flex;
@@ -27,8 +29,9 @@
         display: inline-flex;
         flex-wrap: wrap;
         gap: 15px;
+        animation: pop-up var(--greetings-animation-time) ease forwards;
 
-        .my-name {
+        & .my-name {
             align-self: flex-end;
         }
     }
@@ -37,6 +40,9 @@
         width: 100%;
         display: inline-flex;
         justify-content: space-between;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        animation: pop-up var(--greetings-animation-time) ease forwards;
     }
 }
 

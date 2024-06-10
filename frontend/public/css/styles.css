@@ -5,7 +5,7 @@
 @import url("./inputs/input.css");
 @import url("./inputs/textarea.css");
 @import url("./texts/font-size.css");
-@import url("./texts/text-gradient.css");
+@import url("./utils/animations.css");
 
 @font-face {
     font-family: 'DM Sans';

@@ -1,5 +1,44 @@
+.container-contact-form {
+    --contact-form-gap: 10px;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 #contact-form {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: var(--contact-form-gap);
+    margin-top: auto;
+}
+
+@media (width < 640px) {
+    .container-contact-form {
+        --contact-form-gap: 10px;
+    }
+}
+
+@media (640px <= width < 768px) {
+    .container-contact-form {
+        --contact-form-gap: 10px;
+    }
+}
+
+@media (768px <= width < 1024px) {
+    .container-contact-form {
+        --contact-form-gap: 10px;
+    }
+}
+
+@media (1024px <= width < 1280px) {
+    .container-contact-form {
+        --contact-form-gap: 10px;
+    }
+}
+
+@media (1280px <= width < 1450px) {
+    .container-contact-form {
+        --contact-form-gap: 15px;
+    }
 }

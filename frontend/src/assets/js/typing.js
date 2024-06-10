@@ -49,3 +49,4 @@ function iterateCharString(charList) {
 }
 
 export { startTypingAnimation };
+

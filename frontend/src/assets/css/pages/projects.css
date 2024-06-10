@@ -10,6 +10,7 @@
     row-gap: var(--project-gap);
 }
 
+
 @media (width < 640px) {
     #section-projects {
         --project-gap: 20px;
