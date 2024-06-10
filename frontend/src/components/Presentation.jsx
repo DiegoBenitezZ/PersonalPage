@@ -1,12 +1,11 @@
 import Section from "../layouts/Section";
 import NavTop from "../layouts/NavTop";
-import background from "../assets/img/presentation-bg.png"
 import "../assets/css/pages/presentation.css"
 
 const Presentation = () => {
     return (
         <Section id="presentation">
-            <img src={background} alt="" className="presentation-bg" />
+            <img src="/img/backgrounds/presentation-bg.png" alt="" className="presentation-bg" />
             <NavTop/>
             <div id="presentation-content">
                 <div className="greeting">

@@ -14,7 +14,6 @@
     
 #section-contact .container-contact-bg {
     width: calc(100% - var(--container-contact-form-width));
-    background-image: url("../../img/footer-bg.jpg");
     overflow-x: hidden;
     overflow-y: hidden;
     
