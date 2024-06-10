@@ -17,9 +17,9 @@
 
 @media (width < 640px) {
     #section-tecnology {
-        --slide-track-heigth: 60px;
+        --slide-track-heigth: 50px;
         --slide-track-padding-y: 15px;
-        --slide-track-padding-x: 10px;
+        --slide-track-padding-x: 20px;
     }
 
     .slide-track { 
