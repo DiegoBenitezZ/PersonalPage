@@ -11,9 +11,9 @@
 }
 
 .btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);;
-    transition: .2s ease-in-out 0s;
+    transform: scale(1.15);
+    box-shadow: 2px 2px 5px black;
+    transition: all .2s ease-in-out 0s;
 }
 
 .btn-group {

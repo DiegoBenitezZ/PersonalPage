@@ -20,7 +20,7 @@ const Presentation = () => {
                     This my portfolio where you can learn more about me and my career,
                     and also watch my more important projects and all about my education.
                     </span>
-                    <button type="button" className="btn btn-lg"> {"Start"}  </button>
+                    <button onClick={() => document.getElementById("section-tecnology").scrollIntoView()} type="button" className="btn btn-lg"> {"Start"}  </button>
                 </p>
             </div>
         </Section>

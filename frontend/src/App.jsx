@@ -5,6 +5,7 @@ import PresentationPage from "./components/Presentation.jsx"
 import ProjectsPage from "./components/projects/ProjectsPage.jsx";
 import TecnologyPage from "./components/tecnology/TecnologyPage.jsx";
 import WorkExperiencePage from "./components/workExperience/WorkExperiencePage.jsx";
+import ScrollTopButton from "./components/buttons/ScrollTopButton.jsx";
 
 const App = () => {
     return (
@@ -16,6 +17,7 @@ const App = () => {
             <WorkExperiencePage/>
             <EducationPage/>
             <ContactPage/>
+            <ScrollTopButton/>
         </>
     );
 }

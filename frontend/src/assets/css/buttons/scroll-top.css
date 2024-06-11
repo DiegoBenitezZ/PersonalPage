@@ -1,0 +1,67 @@
+.scroll-top {
+    /* --scroll-top-size: 40px;
+    --icon-scale: 1.5;
+    --view-bottom: 2%;
+    --view-right: 2%; */
+
+    height: var(--scroll-top-size);
+    width: var(--scroll-top-size);
+    position: fixed;
+    bottom: var(--view-bottom);
+    right: var(--view-right);
+    background-color: var(--blue);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+
+    & > * {
+        color: var(--white);
+        transform: scale(var(--icon-scale));
+    }
+}
+
+@media (width < 640px) {
+    .scroll-top {
+        --scroll-top-size: 40px;
+        --icon-scale: 1.5;
+        --view-bottom: 2%;
+        --view-right: 2%;
+    }
+}
+
+@media (640px <= width < 768px) {
+    .scroll-top {
+        --scroll-top-size: 40px;
+        --icon-scale: 1.7;
+        --view-bottom: 2%;
+        --view-right: 3%;
+    } 
+}
+
+@media (768px <= width < 1024px) {
+    .scroll-top {
+        --scroll-top-size: 45px;
+        --icon-scale: 1.8;
+        --view-bottom: 3%;
+        --view-right: 3%;
+    }
+}
+
+@media (1024px <= width < 1280px) {
+    .scroll-top {
+        --scroll-top-size: 45px;
+        --icon-scale: 2;
+        --view-bottom: 4%;
+        --view-right: 3%;
+    }
+}
+
+@media (1280px <= width) {
+    .scroll-top {
+        --scroll-top-size: 45px;
+        --icon-scale: 2;
+        --view-bottom: 5%;
+        --view-right: 3%;
+    }
+}

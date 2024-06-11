@@ -29,12 +29,18 @@
     --gray: #C4C4CC;
 }
 
+html {
+    scrollbar-color: var(--white) black;
+    scrollbar-width: thin !important;
+}
+
 body {
     min-width: 400px !important;
     font-family: 'DM Sans', sans-serif;
     color: var(--white);
     /* background-color: #000000; */
     background-color: var(--black);
+
 }
 
 section {

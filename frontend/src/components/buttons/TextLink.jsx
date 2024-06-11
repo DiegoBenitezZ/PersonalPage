@@ -1,6 +1,6 @@
-const TextLink = ({ text = "Link" }) => {
+const TextLink = ({ text = "Link", scrollTarget = "" }) => {
     return (
-        <a className="text-xs">
+        <a onClick={() => {document.getElementById(scrollTarget).scrollIntoView();}} className="text-link text-xs">
             {text}
         </a>
     );

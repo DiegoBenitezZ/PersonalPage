@@ -40,8 +40,6 @@
         width: 100%;
         display: inline-flex;
         justify-content: space-between;
-        overflow-x: hidden;
-        overflow-y: hidden;
         animation: pop-up var(--greetings-animation-time) ease forwards;
     }
 }

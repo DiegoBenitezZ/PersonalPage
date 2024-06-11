@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { startTypingAnimation } from "../../assets/js/typing.js";
 import { profileList } from '../../assets/data/profiles.js';
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import '../../assets/css/texts/typing.css'
 import "../../assets/css/components/information-header.css"
 
@@ -17,7 +17,7 @@ const InformationHeader = () => {
             </p>
             <p className="text-sm text-gray text-medium">
                 <FontAwesomeIcon icon="fa-solid fa-user-graduate"/> &nbsp;
-                Graduated in System and Computer Engineer
+                Graduated in System and Computer Engineering
             </p>
             <p className="text-sm text-gray text-medium">
                 <FontAwesomeIcon icon="fa-solid fa-briefcase"/> &nbsp;

@@ -8,9 +8,9 @@ const NavTop = () => {
         <nav id="container-navtop">
             <img className="navtop-logo" src="/img/icons/logo.svg" alt="Diego Benitez Logo"/>
             <span>
-                <TextLink text="Information"/>
-                <TextLink text="Projects"/>
-                <TextLink text="Contact"/>
+                <TextLink text="Information" scrollTarget="section-information"/>
+                <TextLink text="Projects" scrollTarget="section-projects"/>
+                <TextLink text="Contact" scrollTarget="section-contact"/>
 
                 <span className="icons-group">
                     {
