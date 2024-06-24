@@ -41,6 +41,13 @@ const projects = [
         color2: "#030f17", 
         logo: "rici.png"
     },
+    {
+        id: 7, 
+        name: "Copa America Tournament", 
+        color1: "#003282", 
+        color2: "#00183d", 
+        logo: "copa-america.png"
+    },
 ]
 
 export {projects}
